@@ -26,7 +26,7 @@ class Dashboard(QWidget):
         self.accel_plot.showGrid(x=True, y=True)
 
         # position
-        accel_legend = self.accel_plot.addLegend(offset=(551, 6))
+        accel_legend = self.accel_plot.addLegend(offset=(10, 7))
 
         self.accel_x = self.accel_plot.plot(pen='r', name="X")
         self.accel_y = self.accel_plot.plot(pen='g', name="Y")
@@ -44,7 +44,7 @@ class Dashboard(QWidget):
         self.gyro_plot.showGrid(x=True, y=True)
 
         # position
-        gyro_legend = self.gyro_plot.addLegend(offset=(551, 6))
+        gyro_legend = self.gyro_plot.addLegend(offset=(10, 7))
 
         self.gyro_x = self.gyro_plot.plot(pen='r', name="X")
         self.gyro_y = self.gyro_plot.plot(pen='g', name="Y")
